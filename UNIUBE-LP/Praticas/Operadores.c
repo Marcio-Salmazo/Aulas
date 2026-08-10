@@ -7,7 +7,11 @@ int soma, sub, div, mul;
 
 int main()
 {
-     //Acentos do português
+     // setlocale(): Altera ou consulta a categoria de idioma do programa. 
+     // O uso mais comum para o português é setlocale(LC_ALL, "Portuguese"); 
+     // ou setlocale(LC_ALL, ""); para adotar o padrão do sistema operacional.
+     // LC_ALL: Macro usada na função setlocale(...) para aplicar a 
+     // configuração a todas as categorias de localização do programa.
      setlocale(LC_ALL, "Portuguese"); 
      
      printf("valor inicial das variáveis:");
@@ -15,6 +19,12 @@ int main()
      printf("y = %d\n",y);
      printf("z = %d\n",z);
      
+     // \n: serve para fazer uma quebra de linha (ou nova linha). 
+     // Trata-se de uma sequência de escape usada dentro de textos para mandar 
+     // o cursor ir para o início da linha de baixo.
+     
+     // Sequência de escape: Começa com uma barra invertida (\) para indicar 
+     // um comando especial que não pode ser escrito de modo normal no teclado.
      printf("\n");
      
     //soma

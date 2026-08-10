@@ -6,16 +6,34 @@
 
 char character;
 
+// Não existe “short float” em C, mas a linguagem permite o uso de “long double” 
+// para criar um tipo de ponto flutuante com precisão ainda maior que o “double”
 float float_number;
 double double_number;
 long double long_double_number;
 
-//unsigned funciona apenas com inteiros
+// signed e unsigned: Não funcionam com float. Esses modificadores servem 
+// apenas para tipos inteiros (int) e caracteres (char), pois definem a 
+// presença ou ausência de sinal matemático no armazenamento binário dos bits.
+// Os números float já possuem nativamente um bit dedicado ao sinal.
 int int_number;
 unsigned int unsigned_int;
 unsigned long int unsigned_long_int;
 unsigned short int unsigned_short_int;
 
+
+// Especificadores de formato são códigos iniciados por % usados para indicar 
+// o tipo de dado que o programa vai ler ou mostrar na tela. São eles:
+
+// %d (ou %i) - Número inteiro decimal
+// %f - Número real de ponto flutuante
+// %lf - Número real de dupla precisão (double)
+// %c - Um único caractere
+// %s - Cadeia de caracteres
+// %u - Número decimal sem sinal
+// %o - Número em formato octal
+// %x - Número em formato hexadecimal
+// %p - Endereço de memória de um ponteiro
 
 int main()
 {   
